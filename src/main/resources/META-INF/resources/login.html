@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cataloger - 1.0.0-SNAPSHOT</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <style>
+        .container {
+            text-align: center;
+            font-size: x-large;
+        }
+        button {
+            font-size: x-large;
+            width: 300px;
+        }
+        input {
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+
+<H1 style="text-align: center;">Login to Cataloger</H1>
+<br/>
+<br/>
+<form action="j_security_check" method="post">
+    <div class="container">
+        <label for="j_username"><b>Username: </b></label>
+        <input type="text" placeholder="Enter Username" name="j_username" required>
+        <br/>
+        <br/>
+        <label for="j_password"><b>Password: </b></label>
+        <input type="password" placeholder="Enter Password" name="j_password" required>
+        <br/>
+        <br/>
+        <button type="submit">Login</button>
+    </div>
+</form>
+</body>
+</html>
